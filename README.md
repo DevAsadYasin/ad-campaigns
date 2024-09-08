@@ -32,7 +32,7 @@ This project is designed to showcase basic frontend token management features wi
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-repo/token-management-app.git
+git clone https://github.com/DevAsadYasin/ad-campaigns.git
 cd token-management-app
 ```
 
