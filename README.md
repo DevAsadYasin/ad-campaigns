@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Token Management Application
 
-## Getting Started
+This is a simple Token Management web application built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**. The app allows users to:
+- Save API tokens (access token, client ID, customer ID, etc.) associated with user emails.
+- View and manage tokens in a tabular format.
+- Simulate fetching tokens and display them in the UI.
 
-First, run the development server:
+This project is designed to showcase basic frontend token management features without backend integration for persistence.
+
+## Prerequisites
+
+- **Node.js**: Version 18 or higher.
+- **Yarn** or **npm** for package management.
+
+## Tech Stack
+
+- **Next.js 14**: React framework for SSR and client-side rendering.
+- **TypeScript**: Strongly typed JavaScript for type safety and scalability.
+- **Tailwind CSS**: Utility-first CSS framework for easy and responsive styling.
+
+## Features
+
+- Save and display tokens (email, access token, client ID, API version, etc.).
+- Fetch and display default token data on page load.
+- Responsive design with form on the left and token table on the right.
+- Modern design using Tailwind CSS for easy customization.
+
+## Setup Instructions
+
+### 1. Clone the repository
+
+First, clone the repository to your local machine:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-repo/token-management-app.git
+cd token-management-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Ensure you have Node.js 18 installed. To install the project dependencies, run:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Using npm
+npm install
 
-## Learn More
+# OR using yarn
+yarn install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 3. Run the development server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To start the development server, use the following command:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Using npm
+npm run dev
 
-## Deploy on Vercel
+# OR using yarn
+yarn dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This will start the Next.js development server. You can now view the app in the browser at:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+http://localhost:3000
+```
+
+### 4. Build for production
+
+To build the project for production, use the following command:
+
+```bash
+# Using npm
+npm run build
+
+# OR using yarn
+yarn build
+```
+
+Once built, you can start the production server:
+
+```bash
+# Using npm
+npm run start
+
+# OR using yarn
+yarn start
+```
+
+### 5. Linting
+
+For code quality, linting is set up. To run lint checks:
+
+```bash
+# Using npm
+npm run lint
+
+# OR using yarn
+yarn lint
+```
+
+## Folder Structure
+
+```
+.
+├── public                  # Public assets (images, fonts, etc.)
+├── src
+│   ├── app                 # Next.js app directory
+│   ├── components          # Reusable React components
+│   └── styles              # Global and component-level styles
+├── .eslintrc.js            # ESLint configuration
+├── next.config.js          # Next.js configuration
+├── package.json            # Project metadata and dependencies
+├── README.md               # Project documentation
+└── tsconfig.json           # TypeScript configuration
+```
+
+## Environment Variables
+
+The app doesn't require any specific environment variables to run locally for now, but you can configure environment-specific settings in `.env.local` (if required).
+
+## Future Improvements
+
+- Add backend support to persist tokens.
+- Implement user authentication for more secure token management.
+- Add more form validation and error handling.
